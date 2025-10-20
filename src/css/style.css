@@ -10,6 +10,7 @@ a {
 }
 
 .container {
+    position: relative;
     max-width: 1140px;
     margin: 0px auto;
 }
@@ -19,6 +20,10 @@ a {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0px;
+}
+
+.info__descr.medium {
+    font-weight: 500;
 }
 
 .title__colored {
@@ -169,6 +174,7 @@ a {
 }
 
 .info {
+    min-height: 564px;
     background: rgba(15, 11, 11, 1);
     padding: 100px 0px 140px 0px;
 }
@@ -180,13 +186,18 @@ a {
 }
 
 .info__descr {
-    margin-left: 390px;
+    position: relative;
+    padding-left: 390px;
     margin-top: 20px;
     color: rgba(255, 255, 255, 1);
     text-align: right;
+    font-weight: 300;
+    z-index: 2;
 }
 
-.medium {
-    font-weight: 500;
+.info__img {
+    position: absolute;
+    top: 93px;
+    left: -83px;
+    z-index: 1;
 }
-
